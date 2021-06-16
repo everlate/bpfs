@@ -1,10 +1,10 @@
 # Converter from Factorio book/blueprint in the clipboard to the directory tree of JSONs and back
 ## Rationale
 Factorio blueprint libraries are difficult to edit in text mode and maintain in version control systems
-partly because of the large size of the single json file exported from the game.
+partly due to the large size of the single JSON exported from the game.
 
-This project allows for parsing the decoded json into the directory structure of individual blueprints.
-Such organization is good for version control and manual editing.
+This project allows to parse the decoded JSON into the directory structure of individual blueprints.
+Such structure is good for version control and manual editing.
 
 ## Directory structure
 - dir: [book label]
@@ -29,13 +29,14 @@ bpdeploy.py encodes the selected directory or blueprint into the clipboard strin
     
 ## Installation
 Python >= 3.5 is required.
-The project uses pyperclip as a cross-platform clipboard library. Under Linux it additionally needs xclip or xsel installed.
+The project uses pyperclip as a cross-platform clipboard library. 
+Under Linux it additionally needs xclip or xsel installed.
 
 Pyperclip can be installed via PyPI
 
     pip3 install pyperclip
     
-Was not yet tested under Windows.
+The project was not yet tested under Windows.
 
 ## Testing
     cd bpfs
